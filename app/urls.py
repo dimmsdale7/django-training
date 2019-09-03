@@ -9,4 +9,5 @@ router = routers.DefaultRouter()
 urlpatterns = [
 	url(r'^', include(router.urls)),
 	url(r'^home/$', views.HomeView.as_view()),
+	url(r'^articles/$', views.ArticleView.as_view()),
 ]
